@@ -1,27 +1,59 @@
-# 🎲 Proyecto Juegos de Azar
+# 🎰 Proyecto Juegos de Azar
 
-Una librería Python que implementa simuladores simples de juegos de azar: lanzamiento de dados y extracción de cartas. Desarrollado como proyecto de prácticas, siguiendo buenas prácticas de programación y uso de control de versiones con Git.
+Una librería Python desarrollada como proyecto de prácticas, que simula juegos de azar: 🎲 lanzamiento de dados y 🎴 extracción de cartas. Diseñado siguiendo buenas prácticas de programación, estructuras limpias y control de versiones con Git.
 
 ---
 
 ## 🚀 Instalación
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/SebastianGH20/proyecto_juegos_azar.git
-   cd proyecto_juegos_azar
-   ```
+1. 📥 Clona este repositorio:
 
-2. Crea un entorno virtual (recomendado):
-   ```bash
-   python -m venv juegos_azar_env
-   juegos_azar_env\Scripts\activate   # En Windows
-   ```
+```bash
+git clone https://github.com/SebastianGH20/proyecto_juegos_azar.git
+cd proyecto_juegos_azar
+```
 
-3. Instala el paquete en modo desarrollo:
-   ```bash
-   pip install -e .
-   ```
+2. 🛠️ Crea y activa un entorno virtual (opcional pero recomendado):
+
+```bash
+python -m venv juegos_azar_env
+juegos_azar_env\Scripts\activate  # En Windows
+```
+
+3. 📦 Instala el proyecto en modo desarrollo:
+
+```bash
+pip install -e .
+```
+
+---
+
+## ▶️ Ejecución del Proyecto
+
+4. 🔧 Desde la raíz del proyecto, ejecuta el script principal:
+
+```bash
+python scripts/main.py
+```
+
+✔️ Esto demostrará el funcionamiento del **Simulador de Cartas** y el **Simulador de Dados**.
+
+---
+
+5. 🧪 Ejecutar pruebas automáticas:
+
+```bash
+python -m unittest discover test
+```
+
+✔️ Resultado esperado:
+```
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+```
 
 ---
 
@@ -29,15 +61,17 @@ Una librería Python que implementa simuladores simples de juegos de azar: lanza
 
 ```
 proyecto_juegos_azar/
-├── juegos_azar/              # Código fuente (librería)
+├── juegos_azar/              # Código fuente (librería principal)
 │   ├── __init__.py
 │   ├── cartas.py
 │   └── dados.py
-├── scripts/                  # Script ejecutable principal
+├── scripts/                  # Script ejecutable
 │   └── main.py
-├── test/                     # (Opcional) Pruebas unitarias
-├── config/                   # Configuración (no usada en este ejemplo)
-├── data/                     # Datos (no usada en este ejemplo)
+├── test/                     # Pruebas unitarias
+│   ├── test_cartas.py
+│   └── test_dados.py
+├── config/                   # Configuración (no utilizada en este ejemplo)
+├── data/                     # Datos (no utilizada en este ejemplo)
 ├── README.md
 ├── setup.py
 └── .gitignore
@@ -45,7 +79,7 @@ proyecto_juegos_azar/
 
 ---
 
-## 🧠 Uso de la Librería
+## 🧠 Ejemplos de Uso
 
 ### 🎴 Simulador de Cartas
 
@@ -71,25 +105,13 @@ print(dado.tirar(5))              # Ej: [2, 5, 1, 6, 4]
 
 ---
 
-## ▶️ Ejecutar el Script Principal
-
-Desde la raíz del proyecto, ejecuta:
-
-```bash
-python scripts/main.py
-```
-
-Esto demostrará el funcionamiento tanto del simulador de cartas como del de dados.
-
----
-
 ## ✅ Buenas Prácticas Aplicadas
 
 - ✅ Programación orientada a objetos
 - ✅ Modularidad del código
 - ✅ Control de versiones con Git y ramas por funcionalidad
 - ✅ Instalación como paquete (`pip install -e .`)
-- ✅ Código limpio y reutilizable
+- ✅ Código limpio, documentado y reutilizable
 
 ---
 
